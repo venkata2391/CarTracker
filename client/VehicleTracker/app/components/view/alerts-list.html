@@ -1,0 +1,18 @@
+<h1>High Alerts for All Vehicles In past 2 hours :  {{highAlertsVm.alerts.length}}</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Priority</th>
+        <th>Time Reported</th>
+        <th>Reason For Alert</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="alert in highAlertsVm.alerts" | alert.vin>
+        <td>{{alert.vin}}</td>
+        <td>{{alert.timestamp}}</td>
+        <td>{{alert.vin}}</td>
+    </tr>
+    </tbody>
+</table>

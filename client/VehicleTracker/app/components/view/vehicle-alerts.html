@@ -1,0 +1,18 @@
+<h1>Vehicle Alerts for Past two hours</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Priority</th>
+        <th>Time Reported</th>
+        <th>Reason For Alert</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="alerts in alertListVm.alerts">
+        <td>{{alert.vin}}</td>
+        <td>{{alert.timestamp}}</td>
+        <td>{{alert.vin}}</td>
+    </tr>
+    </tbody>
+</table>
