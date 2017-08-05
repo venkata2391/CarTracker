@@ -1,0 +1,23 @@
+<h1>Vehicle List</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>VIN</th>
+        <th>MAKE</th>
+        <th>MODEL</th>
+        <th>YEAR</th>
+        <th>RED LINE RPM</th>
+        <th>MAX FUEL VOLUME</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="vehicle in vehicleListVm.vehicles">
+        <td><a href="#!getAlertsByVIN/vehicle.vin"/>{{vehicle.vin}}</td>
+        <td>{{vehicle.make}}</td>
+        <td>{{vehicle.model}}</td>
+        <td>{{vehicle.year}}</td>
+        <td>{{vehicle.redlineRpm}}</td>
+        <td>{{vehicle.maxFuelVolume}}</td>
+    </tr>
+    </tbody>
+</table>
